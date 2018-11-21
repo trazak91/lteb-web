@@ -1,2 +1,2 @@
 # lteb-web
-Web site lteb
+Ce repositoire contient le site #LTEB
