@@ -1,9 +1,5 @@
 /*
-
-Moonlight Template
-
-http://www.templatemo.com/tm-512-moonlight
-
+Lève-toi et Brille Stylesheet
 */
 
 @keyframes seq-preloader {
@@ -163,15 +159,15 @@ body {
 nav {
 	top: 10vh;
 	bottom: 10vh;
-  	text-align: center;
-  	background: rgba(0, 0, 0, 0.5);
-  	position: fixed;
-  	z-index: 100;
-  	height: 80vh;
-  	left: 0;
-  	width: 20%;
-  	font-weight: 300;
-  	font-size: 1rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 100;
+  height: 80vh;
+  left: 0;
+  width: 200px;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
 nav em {
@@ -193,30 +189,35 @@ nav .mini-logo {
 }
 
 nav .logo {
-	margin-top: 45px;
-	padding: 0px 20px;
+	/*margin-top: 45px;*/
+	/*padding: 0px 20px;*/
+  height: 18vh;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 nav .logo img {
-	max-width: 100%;
+	/*max-width: 100%;*/
+  max-width: 94%;
 	overflow-y: hidden;
 }
 
 nav ul {
-	margin-top: 60px;
-  	text-align: left;
-  	margin-left: 40px;
-  	list-style-type: none;
-  	height: 48vh;
-  	display: -webkit-box;
-  	display: -ms-flexbox;
-  	display: flex;
-  	-webkit-box-orient: vertical;
-  	-webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  	-ms-flex-pack: distribute;
-    justify-content: space-around;
+	/*margin-top: 60px;*/
+  text-align: left;
+  margin-left: 25px;
+  list-style-type: none;
+  height: 62vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  /*display: flex;*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  overflow-y: auto;
 }
 nav ul li {
 	margin: 25px 0px;
@@ -247,6 +248,7 @@ nav a::before {
   left: 0;
   opacity: 1;
   z-index: -1;
+  width: 60px;
 }
 nav a:hover {
 	text-decoration: none;
@@ -284,7 +286,7 @@ nav a:hover::before {
   bottom: 10%;
   background: rgba(0, 0, 0, 0.5);
 }
-.content::-webkit-scrollbar {
+.content::-webkit-scrollbar, ul::-webkit-scrollbar{
   width: 5px;
   height: 8px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -719,10 +721,10 @@ nav a:hover::before {
 
 @media (max-width: 991px) {
 
-	nav ul {
+/*	nav ul {
   		margin-left: 25px;
   	}
-
+*/
 	.first-content {
 		text-align: center;
 		padding: 50px;
@@ -773,7 +775,7 @@ nav a:hover::before {
 @media (max-width: 749px) {
 
 	nav {
-		width: 15vh;
+		width: 76px;
 	}
 
 	nav .logo {
@@ -781,13 +783,19 @@ nav a:hover::before {
 	}
 
 	nav .mini-logo {
-		margin-top: 60px;
-		display: block;
+		/*margin-top: 60px;*/
+    height: 25vh;
+    width: 76px;
+		/*display: block;*/
+    display: table-cell;
+    vertical-align: middle;
 	}
 
 	nav ul {
+    height: 55vh;
 		text-align: center;
 		margin-left: 0px;
+    overflow-x: hidden;
 	}
 
 
@@ -830,16 +838,28 @@ nav a:hover::before {
 		padding: 15px 15px 15px 15px;
 	}
 
+  nav a {
+      padding: 15px 20px;
+  }
 }
 
 @media(max-width: 450px) {
+
+  nav .mini-logo {
+    /*margin-top: 60px;
+    display: block;*/
+    height: 15vh;
+  }
+
 	nav ul {
-		margin-top: 30px;
-	}
+		/*margin-top: 30px;*/
+    height: 65vh;
+  }
+
 	nav ul li {
 		margin: 10px 0px;
 	}
-	nav a {
+	nav a, nav a:hover {
 	  	padding: 15px 20px;
 	}
 }
